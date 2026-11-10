@@ -1,0 +1,46 @@
+===========================================================================
+01_KandidatMarker_Caesar
+===========================================================================
+
+1. TABEL PERBANDINGAN KANDIDAT MARKER
+---------------------------------------------------------------------------
+Parameter Evaluasi    | Kandidat 1: gambar1      | Kandidat 2: gambar2
+                      | (Logo Merah Figur        | (Logo Serigala Kuning
+                      |  Mengangkat Tangan)      |  dengan Teks ONIC)
+---------------------------------------------------------------------------
+Kontras Warna         | Tinggi                   | Tinggi
+Kerapatan Fitur       | Rendah                   | Sedang
+Asimetris & Keunikan  | Hampir simetris kiri-    | Asimetris penuh
+                      | kanan                    |
+Skor/Rating Vuforia   | 2 / 5 Star (perkiraan)   | 3 / 5 Star (perkiraan)
+Stabilitas Tracking   | Kurang stabil, fitur     | Cukup stabil, tepi surai
+                      | sedikit dan bentuk       | bergerigi dan teks memberi
+                      | simetris                 | banyak titik fitur
+---------------------------------------------------------------------------
+Catatan: Nilai berdasarkan pengamatan visual terhadap kedua gambar
+(skor Vuforia dan stabilitas tracking berupa perkiraan, belum diuji
+pada perangkat nyata). Uji tracking dilakukan pada Pertemuan 11.
+
+
+2. ALASAN PEMILIHAN MARKER FINAL
+---------------------------------------------------------------------------
+Marker Final yang dipilih adalah Kandidat 2 (gambar2) dengan
+pertimbangan teknis sebagai berikut:
+
+1. Kerapatan Fitur Lebih Tinggi:
+   Tepi surai yang bergerigi, mata merah, dan teks "ONIC" menghasilkan
+   banyak sudut dan titik unik (feature points) yang tersebar di area
+   gambar, sehingga lebih mudah dideteksi dan dilacak oleh sistem image
+   tracking. Gambar1 didominasi bidang merah solid dengan sedikit sudut.
+
+2. Asimetri dan Keunikan Tinggi:
+   Gambar2 tidak memiliki pola simetris yang dapat membingungkan sistem
+   saat menentukan orientasi gambar, sedangkan gambar1 hampir simetris
+   kiri-kanan sehingga lebih mudah tertukar.
+
+3. Stabilitas Tracking:
+   Dengan fitur yang lebih banyak dan komposisi yang unik, gambar2
+   diperkirakan menghasilkan tracking yang lebih stabil saat kamera
+   digerakkan. Kontras kuning terhadap latar hitam juga memperjelas
+   batas bentuk gambar.
+===========================================================================
